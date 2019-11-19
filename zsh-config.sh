@@ -38,6 +38,7 @@ alias grbod="git rebase origin/dev"
 alias grbom="git rebase origin/master"
 alias grbud="git rebase upstream/dev"
 alias grbum="git rebase upstream/master"
+alias gff="gf origin && gf upstream && gf origin --no-prune"
 
 # Docker
 alias dcub="docker-compose up --build"
