@@ -3,10 +3,11 @@
 #====================#
 
 export ZSH="/Users/vlad-yakovlev/.oh-my-zsh"
-export ZSH_THEME="robbyrussell"
+export ZSH_THEME="awesomepanda"
 
 plugins=(
   git
+  svn
 )
 
 source $ZSH/oh-my-zsh.sh
