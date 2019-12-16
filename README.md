@@ -2,15 +2,17 @@
 
 Based on https://github.com/robbyrussell/oh-my-zsh.
 
-## Installation
+## Install
 
-1. Clone repo:
+1. Install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh).
+
+2. Switch to home directory and clone the repo:
 ```sh
 cd ~
 git clone https://github.com/vlad-yakovlev/zsh-config.git .zsh-config
 ```
 
-2. Create `.zshrc` with content:
+3. Create `~/.zshrc` with the contents:
 ```sh
 source ~/.zsh-config/zsh-config.sh
 ```
