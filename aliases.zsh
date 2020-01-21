@@ -1,33 +1,3 @@
-#====================#
-# ZSH
-#====================#
-
-export ZSH="/Users/vlad-yakovlev/.oh-my-zsh"
-export ZSH_THEME="awesomepanda"
-
-plugins=(
-  git
-  svn
-)
-
-source $ZSH/oh-my-zsh.sh
-
-
-#====================#
-# Config
-#====================#
-
-# NVM
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
-# Node
-export NODE_TLS_REJECT_UNAUTHORIZED=0
-
-#====================#
-# Aliases
-#====================#
-
 # Git
 gcbv() { git checkout -b vlad-yakovlev.$1 ${@:2} }
 alias gcm="git commit -m"
