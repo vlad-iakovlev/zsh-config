@@ -1,5 +1,4 @@
 # Git
-gcbv() { git checkout -b vlad-yakovlev.$1 ${@:2} }
 alias gcm="git commit -m"
 alias gcood="git checkout origin/dev"
 alias gcoom="git checkout origin/master"
