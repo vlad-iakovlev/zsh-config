@@ -26,5 +26,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
 
 # pyenv
-command -v pyenv 1>/dev/null 2>&1 && eval "$(pyenv init -)"
+export PYENV_ROOT="$HOME/.pyenv"
+[ -s "$PYENV_ROOT" ] && export PATH="$PYENV_ROOT/bin:$PATH"
 command -v pyenv 1>/dev/null 2>&1 && eval "$(pyenv init --path)"
+command -v pyenv 1>/dev/null 2>&1 && eval "$(pyenv init -)"
