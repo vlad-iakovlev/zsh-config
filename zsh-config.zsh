@@ -27,6 +27,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
-[ -s "$PYENV_ROOT" ] && export PATH="$PYENV_ROOT/bin:$PATH"
+[ -s "$PYENV_ROOT/bin" ] && export PATH="$PYENV_ROOT/bin:$PATH"
 command -v pyenv 1>/dev/null 2>&1 && eval "$(pyenv init --path)"
 command -v pyenv 1>/dev/null 2>&1 && eval "$(pyenv init -)"
