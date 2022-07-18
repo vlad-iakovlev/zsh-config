@@ -20,5 +20,9 @@ ZSH="$HOME/.oh-my-zsh"
 ZSH_CONFIG="$HOME/.zsh-config"
 P10K="$HOME/.p10k"
 
+typeset -A GIT_BRANCH_ALIASES
+#GIT_BRANCH_ALIASES[om]=origin/main
+#GIT_BRANCH_ALIASES[od]=origin/dev
+
 source $ZSH_CONFIG/zsh-config.zsh
 ```
