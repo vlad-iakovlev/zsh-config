@@ -30,3 +30,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 [ -s "$PYENV_ROOT/bin" ] && export PATH="$PYENV_ROOT/bin:$PATH"
 command -v pyenv 1>/dev/null 2>&1 && eval "$(pyenv init --path)"
 command -v pyenv 1>/dev/null 2>&1 && eval "$(pyenv init -)"
+
+#gvm
+export GVM_DIR="$HOME/.gvm"
+[[ -s "$GVM_DIR/scripts/gvm" ]] && source "$GVM_DIR/scripts/gvm"
