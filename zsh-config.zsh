@@ -19,6 +19,9 @@ source $ZSH_CONFIG/aliases.zsh
 # Config
 #====================#
 
+# brew
+[ "$(command -v brew)" ] && FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
@@ -33,4 +36,4 @@ command -v pyenv 1>/dev/null 2>&1 && eval "$(pyenv init -)"
 
 #gvm
 export GVM_DIR="$HOME/.gvm"
-[[ -s "$GVM_DIR/scripts/gvm" ]] && source "$GVM_DIR/scripts/gvm"
+[ -s "$GVM_DIR/scripts/gvm" ] && source "$GVM_DIR/scripts/gvm"
