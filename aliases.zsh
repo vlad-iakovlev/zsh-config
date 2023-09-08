@@ -1,6 +1,7 @@
 # Git
 alias gcm="git commit -m"
 alias gbD="git branch -D"
+alias gmc="git merge --continue"
 
 for short branch in "${(@kv)GIT_BRANCH_ALIASES}"; do
   alias gco$short="git checkout $branch"
