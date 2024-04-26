@@ -11,7 +11,7 @@
 ```sh
 cd ~
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.p10k
-git clone --depth=1 https://github.com/vlad-yakovlev/zsh-config.git ~/.zsh-config
+git clone --depth=1 https://github.com/vlad-iakovlev/zsh-config.git ~/.zsh-config
 ```
 
 3. Create `~/.zshrc` with the contents:
