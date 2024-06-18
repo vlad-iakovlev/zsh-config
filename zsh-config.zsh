@@ -17,7 +17,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv 1>/dev/null 2>&1 && eval "$(pyenv init --path)"
 command -v pyenv 1>/dev/null 2>&1 && eval "$(pyenv init -)"
 
-#gvm
+# gvm
 export GVM_DIR="$HOME/.gvm"
 [ -s "$GVM_DIR/scripts/gvm" ] && source "$GVM_DIR/scripts/gvm"
 
@@ -33,7 +33,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Theme with fast git-status
 source $P10K/powerlevel10k.zsh-theme
-source $ZSH_CONFIG/p10k.zsh
+source ${0:a:h}/p10k.zsh
 
 # Aliases
-source $ZSH_CONFIG/aliases.zsh
+source ${0:a:h}/aliases.zsh
