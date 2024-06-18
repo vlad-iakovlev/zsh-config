@@ -7,7 +7,7 @@
 
 1. Install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh).
 
-2. Clone P10K repo:
+2. Clone Powerlevel10k:
 
 ```sh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.p10k
