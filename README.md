@@ -24,7 +24,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
-4. [Optional] Install plugins:
+4. _[Optional]_ Install plugins:
 
 ```sh
 git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -40,14 +40,16 @@ git clone --depth=1 https://github.com/vlad-iakovlev/zsh-config.git ~/.zsh-confi
 6. Create `~/.zshrc` with the contents:
 
 ```sh
-# plugins+=(
+# plugins=(
+#   git
 #   zsh-autosuggestions
 #   zsh-syntax-highlighting
 # )
 
-# typeset -A GIT_BRANCH_ALIASES
-# GIT_BRANCH_ALIASES[om]=origin/main
-# GIT_BRANCH_ALIASES[od]=origin/dev
+# typeset -A git_branch_aliases=(
+#   om origin/main
+#   od origin/dev
+# )
 
 source $HOME/.zsh-config/zsh-config.zsh
 ```
