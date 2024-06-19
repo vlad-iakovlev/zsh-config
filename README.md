@@ -41,7 +41,6 @@ git clone --depth=1 https://github.com/vlad-iakovlev/zsh-config.git ~/.zsh-confi
 
 ```sh
 # plugins=(
-#   git
 #   zsh-autosuggestions
 #   zsh-syntax-highlighting
 # )
