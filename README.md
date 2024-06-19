@@ -40,16 +40,14 @@ git clone --depth=1 https://github.com/vlad-iakovlev/zsh-config.git ~/.zsh-confi
 6. Create `~/.zshrc` with the contents:
 
 ```sh
-ZSH="$HOME/.oh-my-zsh"
-
 # plugins+=(
 #   zsh-autosuggestions
 #   zsh-syntax-highlighting
 # )
 
-typeset -A GIT_BRANCH_ALIASES
-#GIT_BRANCH_ALIASES[om]=origin/main
-#GIT_BRANCH_ALIASES[od]=origin/dev
+# typeset -A GIT_BRANCH_ALIASES
+# GIT_BRANCH_ALIASES[om]=origin/main
+# GIT_BRANCH_ALIASES[od]=origin/dev
 
 source $HOME/.zsh-config/zsh-config.zsh
 ```

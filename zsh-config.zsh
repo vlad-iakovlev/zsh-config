@@ -38,7 +38,7 @@ plugins+=(
   git
 )
 
-source $ZSH/oh-my-zsh.sh
+source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
 #====================#
 # Misc
