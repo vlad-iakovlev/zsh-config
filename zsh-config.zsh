@@ -34,10 +34,8 @@ export GVM_DIR="$HOME/.gvm"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(
+plugins+=(
   git
-  zsh-autosuggestions
-  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh

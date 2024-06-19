@@ -18,24 +18,34 @@ brew install font-meslo-for-powerlevel10k
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-3. Install theme and plugins:
+3. Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k):
 
 ```sh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-4. Clone this repo:
+4. [Optional] Install plugins:
+
+```sh
+git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+5. Clone this repo:
 
 ```sh
 git clone --depth=1 https://github.com/vlad-iakovlev/zsh-config.git ~/.zsh-config
 ```
 
-5. Create `~/.zshrc` with the contents:
+6. Create `~/.zshrc` with the contents:
 
 ```sh
 ZSH="$HOME/.oh-my-zsh"
+
+# plugins+=(
+#   zsh-autosuggestions
+#   zsh-syntax-highlighting
+# )
 
 typeset -A GIT_BRANCH_ALIASES
 #GIT_BRANCH_ALIASES[om]=origin/main
