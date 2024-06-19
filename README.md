@@ -5,25 +5,37 @@
 
 ## Install
 
-1. Install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh).
-
-2. Clone Powerlevel10k:
+1. Install [MesloLGS NF](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf):
 
 ```sh
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.p10k
+# On macOS
+brew install font-meslo-for-powerlevel10k
 ```
 
-3. Clone this repo:
+2. Install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh):
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+3. Install theme and plugins:
+
+```sh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+4. Clone this repo:
 
 ```sh
 git clone --depth=1 https://github.com/vlad-iakovlev/zsh-config.git ~/.zsh-config
 ```
 
-4. Create `~/.zshrc` with the contents:
+5. Create `~/.zshrc` with the contents:
 
 ```sh
 ZSH="$HOME/.oh-my-zsh"
-P10K="$HOME/.p10k"
 
 typeset -A GIT_BRANCH_ALIASES
 #GIT_BRANCH_ALIASES[om]=origin/main
