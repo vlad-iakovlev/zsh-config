@@ -3,7 +3,7 @@ alias gcm="git commit -m"
 alias gbD="git branch -D"
 alias gmc="git merge --continue"
 
-for short branch in "${(kv)git_branch_aliases}"; do
+for short branch in "${(@kv)git_branch_aliases}"; do
   alias gco$short="git checkout $branch"
   alias gm$short="git merge $branch"
   alias grb$short="git rebase $branch"
