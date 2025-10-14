@@ -52,3 +52,19 @@ git clone --depth=1 https://github.com/vlad-iakovlev/zsh-config.git ~/.zsh-confi
 
 source $HOME/.zsh-config/zsh-config.zsh
 ```
+
+With plugins enabled:
+
+```sh
+plugins=(
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
+
+# typeset -A git_branch_aliases=(
+#   om origin/main
+#   od origin/dev
+# )
+
+source $HOME/.zsh-config/zsh-config.zsh
+```
